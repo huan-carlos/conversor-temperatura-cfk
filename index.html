@@ -17,7 +17,7 @@
 			}
 			#calc{
 				background-color: #5e5555;
-				max-width: 50%;
+				max-width: 70%;
 				margin: auto;
 				color: white;
 			}
@@ -37,7 +37,7 @@
 <body>
 	<div id="calc">
 		<h1>Conversor de Temperatura</h1>
-		<p><b>Modo de Uso:</b> Insira em apenas um dos campos a teperatura que deseja converter.</p>
+		<p><b>Modo de Uso:</b> Insira em apenas um dos campos a teMperatura que deseja converter.</p>
 		<table>
 		<tr>
 			<td>Celsius</td>
@@ -62,14 +62,14 @@
 			var fahrenheit = document.getElementById('fahrenheit').value;
 			var kelvin = document.getElementById('kelvin').value;
 			if(celsius!==""){
-				document.getElementById('fahrenheit').value = 1.8*celsius+32;
-				document.getElementById('kelvin').value = celsius+273;
+				document.getElementById('fahrenheit').value = (1.8*parseFloat(celsius)+32);
+				document.getElementById('kelvin').value = (parseFloat(celsius)+273.15);
 			}else if (fahrenheit!==""){
-				document.getElementById('celsius').value = (fahrenheit-32)/1.8;
-				document.getElementById('kelvin').value = (fahrenheit-32)*(5/9)+273.15;
+				document.getElementById('celsius').value = ((parseFloat(fahrenheit)-32)/1.8);
+				document.getElementById('kelvin').value = ((parseFloat(fahrenheit)-32)*(5/9)+273.15);
 			}else if(kelvin!==""){
-				document.getElementById('celsius').value = kelvin - 273;
-				document.getElementById('fahrenheit').value = (kelvin-273.15)*(9/5)+32;
+				document.getElementById('celsius').value = (parseFloat(kelvin) - 273);
+				document.getElementById('fahrenheit').value = ((parseFloat(kelvin)-273.15)*(9/5)+32);
 			}
 		}
 		var limpar = document.getElementById('limpar');
