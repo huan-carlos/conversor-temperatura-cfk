@@ -4,40 +4,48 @@
 	<meta charset="utf-8">
 	<title>Conversor de Temperatura</title>
 	<style type="text/css">
-		body{
-			background-color: #b6afaf;
-			text-align: center;
-			color: white;
-			font-size: 10%;
-			max-width: 100%;
-		}
-		table{
-			margin: 0 auto;
-			color: white;
-			font-size: 20px;
-		}
-		input{
-			text-align: center;
-			font-size: 15px;
-			width: 90%;
-			margin: 5px;
-		}
-		#calc{
-			background-color: #5e5555;
-			max-width: 95%;
-			margin: auto;
-			color: white;
-		}
-		button{
-			background-color: #000000;
-			border: 0;
-			color: white;
-			padding: 15px 32px;
-			text-align: center;
-			font-size: 16px;
-			margin-bottom: 7px;
-			margin-top: 7px;
-		}
+			body{
+				background-color: #b6afaf;
+				text-align: center;
+				color: white;
+				max-width: 100%;
+			}
+			h1{
+				font-size: 400%;
+			}
+			table{
+				margin: 0 auto;
+				color: white;
+			}
+			input{
+				text-align: center;
+				width: 60%;
+				margin: 5px;
+				font-size: 55%;
+			}
+			#calc{
+				background-color: #5e5555;
+				max-width: 95%;
+				margin: auto;
+				color: white;
+			}
+			button{
+				background-color: #000000;
+				border: 0;
+				color: white;
+				padding: 15px 32px;
+				text-align: center;
+				margin-bottom: 7px;
+				margin-top: 7px;
+				font-size: 150%;
+			}
+			td{
+				text-align: center;
+				font-size: 200%;
+			}
+			p{
+				font-size: 120%;
+			}
 	</style>
 	
 </head>
@@ -45,19 +53,26 @@
 	<div id="calc">
 		<h1>Conversor de Temperatura</h1>
 		<p><b>Modo de Uso:</b> Insira em apenas um dos campos a temperatura que deseja converter.</p>
-		<p>Use o Botão "LIMPAR" para zerar as temperaturas, caso queira usar novamente.</p>
+		<p>Use o Botão <b>"LIMPAR"</b> para zerar as temperaturas,<br> caso queira usar novamente.</p>
+
 		<table>
-		<tr>
-			<td>Celsius</td>
-			<td>Fahrenheit</td>
-			<td>Kelvin</td>
-		</tr>
-		<tr>
-			<td><input type="text" id="celsius"></td>
-			<td><input type="text" id="fahrenheit"></td>
-			<td><input type="text" id="kelvin"></td>
-		</tr>
+			<tr>
+				<td>Celsius</td>
+				<td><input type="text" id="celsius"></td>
+			</tr>
+			<tr>
+				<td>Fahrenheit</td>
+				<td><input type="text" id="fahrenheit"></td>
+			</tr>
+			<tr>
+				<td>Kelvin</td>
+				<td><input type="text" id="kelvin"></td>
+			</tr>
 		</table>
+
+		
+		
+		
 
 		<button id="converter">Converter</button>
 		<button id="limpar">Limpar</button>
